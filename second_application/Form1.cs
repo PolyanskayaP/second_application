@@ -24,7 +24,12 @@ namespace second_application
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
-
+            // создаем новый экземпляр класса Preview, 
+            // отвечающего за работу с нашей дополнительной формой 
+            // в качестве параметра мы передаем наше загруженное изображение 
+            Form PreView = new Preview(MemForImage);
+            // затем мы вызываем диалоговое окно 
+            PreView.ShowDialog();
         }
 
         private void toolStripButton2_Click(object sender, EventArgs e) 
